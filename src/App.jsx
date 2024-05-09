@@ -33,6 +33,12 @@ function App() {
       setValue(newValue);
     }
   };
+  const reset = () => {
+    setTotal(0);
+    setTotalPerson(0);
+    setPorcentaje(0);
+    setValue('');
+  }
   return (
     <div className='bg-light overflow-x-hidden h-screen flex flex-col
     items-center justify-center'>
@@ -80,7 +86,7 @@ function App() {
                 </div>
               </div>
               <button className='bg-secondary w-full rounded-md py-2 my-4 font-semibold
-              transition-all duration-300 hover:bg-light'>RESET</button>
+              transition-all duration-300 hover:bg-light' onClick={reset}>RESET</button>
             </div>
           </div>
         </div>
