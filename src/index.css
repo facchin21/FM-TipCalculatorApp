@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ocultar las flechas de incremento y decremento en los campos de entrada tipo número */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* Podrías necesitar ajustar el margen */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox no soporta la propiedad -webkit-appearance */
+}
